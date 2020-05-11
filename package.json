@@ -1,0 +1,24 @@
+{
+  "name": "food_booking_project",
+  "version": "1.0.0",
+  "description": "P3_charles_helliet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css", 
+    "sass-min": "sass --style compressed ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charleshelliet/food_booking_project.git"
+  },
+  "author": "Charles Helliet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charleshelliet/food_booking_project/issues"
+  },
+  "homepage": "https://github.com/charleshelliet/food_booking_project#readme",
+  "dependencies": {
+    "sass": "^1.26.5"
+  }
+}
