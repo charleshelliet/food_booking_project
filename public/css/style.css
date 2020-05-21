@@ -1,1 +1,89 @@
-.test{width:10px}/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Croissant+One&family=Devonshire&family=Merienda&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #579c87;
+  display: flex;
+  justify-content: center;
+}
+.header h1 {
+  color: #fdcb46;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 2%;
+}
+.container .rectangle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 1;
+  margin: 2%;
+}
+.container section {
+  width: 20%;
+}
+.container .soon {
+  margin: auto;
+  color: #fdcb46;
+  background-color: #579c87;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 10%;
+}
+
+#menu1 {
+  font-family: "Devonshire", cursive;
+  background-color: #fcdfdb;
+}
+
+#menu2 {
+  font-family: "Croissant One", cursive;
+  background-color: #fff5fe;
+}
+
+#menu3 {
+  font-family: "Allura", cursive;
+  background-color: #f9f9f9;
+}
+
+#menu4 {
+  font-family: "Merienda", cursive;
+  background-color: #fdfffd;
+}
+
+.footer {
+  background-color: #579c87;
+  display: flex;
+  justify-content: center;
+}
+.footer .nav {
+  width: 100%;
+}
+.footer ul {
+  color: #fdcb46;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.footer a {
+  color: #fdcb46;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,13 +1,12 @@
-@import "./base/_base";
+
 @import "./base/_typography";
 
 @import "./utils/_variables";
+
+@import "./base/_base";
 
 @import "./layout/_header";
 @import "./layout/_container";
 @import "./layout/_footer";
 
-.test 
-{
-    width: 10px;
-}
+
