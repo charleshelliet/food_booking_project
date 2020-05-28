@@ -5,9 +5,26 @@ $color-menu1: rgb(252,223,219);
 $color-menu2: rgb(255,245,254);
 $color-menu3: rgb(249,249,249);
 $color-menu4: rgb(253,255,253);
+$color-note: rgb(61,19,25);
+$color-chic: rgb(199,116,18);
+$color-delice: rgb(8,135,251);
+$color-palette: rgb(114,191,86);
 
 $font-primary: 'Roboto';
 $font-note: 'Devonshire', cursive;
 $font-chic: 'Croissant One', cursive;
 $font-delice: 'Allura', cursive;
 $font-palette: 'Merienda', cursive;
+
+@mixin menu-style ($font, $color, $font-color) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $font;
+    background-color: $color;
+    color: $font-color;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(204,196,204,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(204,196,204,1);
+    box-shadow: 0px 0px 10px 1px rgba(204,196,204,1);
+}
