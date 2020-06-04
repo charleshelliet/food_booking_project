@@ -9,13 +9,30 @@
 .rectangle{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     flex-grow:1;
     margin: 2%;
     .menu{
-        width: 20%;
+        width: 310px;
+        height: 520px;
+        margin: 20px;
         a{
             text-decoration: none;
+        }
+        .menu__heading, .menu3__heading, .menu4__heading{
+            font-size: 2.5em;
+            font-family: $font-menu;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        .menu__heading{
+            text-transform: uppercase;
+        }
+        .menu2__heading,{
+            font-size: 2.5em;
+            text-transform: capitalize;
+            font-style: italic;
         }
     }
 }    
@@ -54,7 +71,8 @@ h4{
     margin-top: 0;
     padding-top: 5%;
     h2{
-        font-size: 2em,
+        font-size: 2em;
+        padding-bottom: 5%;
     }
     .menu__byline-big{
         font-size: 3em;
@@ -102,17 +120,17 @@ content:'';
 position:absolute;
 left:calc(-30% - 5px);
 top:calc(50% - 3px);
-border-bottom:5px ridge grey;
 width:40%;
-}
+border-bottom:5px ridge grey;
+}   
 
 .sous_menu__title:after{
 content:'';
 position:absolute;
 right:calc(-30% - 5px);
 top:calc(50% - 3px);
-border-bottom:5px ridge grey;
 width:40%;
+border-bottom:5px ridge grey;
 }
 
 .fas {
@@ -122,4 +140,35 @@ width:40%;
 
 #fas-big {
     font-size: 60px;
+}
+
+
+/* Petit écran */
+
+@media all and (max-device-width: 1024px) {
+
+}
+
+/* Tablette */
+
+@media all and (max-device-width: 768px){
+
+}
+
+/* Mobile */
+
+@media all and (max-device-width: 425px){
+
+    .sous_menu{
+        .menu__byline-big{
+            font-size: 1.8em;
+        }
+        h3{
+            font-size:1.2em;
+        }
+        .sous_menu__plat ul li{
+            font-size:0.6em;
+        }
+    } 
+
 }
