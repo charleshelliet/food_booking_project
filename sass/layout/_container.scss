@@ -19,6 +19,15 @@
         margin: 20px;
         a{
             text-decoration: none;
+            position: relative;
+            transition: transform 450ms, background-color 300ms 150ms;
+            opacity: 0.75;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            &:hover {
+            transform: scale(1.10);
+            opacity: 2;  
+            }
         }
         .menu__heading, .menu3__heading, .menu4__heading{
             font-size: 2.5em;
@@ -43,6 +52,11 @@
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 10px;
+    transition: transform 450ms, background-color 300ms 150ms;
+    &:hover{
+        font-weight: bold;
+        opacity: 1;
+    }
 }
 
 #menu1{
@@ -112,8 +126,7 @@ width: 50%;
 height:1rem;
 margin:auto;
 text-align:center;
-position:relative;
-}
+position:relative; }
 
 .sous_menu__title:before{
 content:'';
@@ -121,7 +134,7 @@ position:absolute;
 left:calc(-30% - 5px);
 top:calc(50% - 3px);
 width:40%;
-border-bottom:5px ridge grey;
+border-bottom:5px solid grey;
 }   
 
 .sous_menu__title:after{
@@ -130,7 +143,7 @@ position:absolute;
 right:calc(-30% - 5px);
 top:calc(50% - 3px);
 width:40%;
-border-bottom:5px ridge grey;
+border-bottom:5px solid grey;
 }
 
 .fas {
@@ -143,6 +156,31 @@ border-bottom:5px ridge grey;
 }
 
 
+/* Grand écran */
+
+@media all and (min-device-width: 2560px) {
+    h4{
+        font-size: 3em;
+    }
+    #fas-big {
+        font-size: 100px;
+    }
+    .sous_menu{
+        .menu__byline-big{
+            font-size: 3.5em;
+        }
+        h3, h2{
+            font-size: 3em;
+        }
+        .sous_menu__plat ul li{
+            font-size: 2.5em;
+        }
+    } 
+    .fas{
+        font-size: 50px;
+    }
+}
+
 /* Petit écran */
 
 @media all and (max-device-width: 1024px) {
@@ -152,23 +190,75 @@ border-bottom:5px ridge grey;
 /* Tablette */
 
 @media all and (max-device-width: 768px){
-
+    h4{
+        font-size: 1.5em;
+    }
+    #fas-big {
+        font-size: 40px;
+    }
+    .sous_menu{
+        .menu__byline-big{
+            font-size: 2.5em;
+        }
+        h3, h2{
+            font-size: 2em;
+        }
+        .sous_menu__plat ul li{
+            font-size: 1em;
+        }
+    } 
+    .fas{
+        font-size: 25px;
+    }
 }
+
 
 /* Mobile */
 
 @media all and (max-device-width: 425px){
-
+    h4{
+        font-size: 1.2em;
+    }
+    #fas-big {
+        font-size: 30px;
+    }
     .sous_menu{
         .menu__byline-big{
             font-size: 1.8em;
         }
-        h3{
+        h3, h2{
             font-size:1.2em;
+        }
+        .sous_menu__plat ul li{
+            font-size:0.8em;
+        }
+    } 
+    .fas{
+        font-size: 20px;
+    }
+}
+
+/* Petit Mobile */
+
+@media all and (max-device-width: 375px){
+    h4{
+        font-size: 1em;
+    }
+    #fas-big {
+        font-size: 20px;
+    }
+    .sous_menu{
+        .menu__byline-big{
+            font-size: 1.5em;
+        }
+        h3, h2{
+            font-size:1em;
         }
         .sous_menu__plat ul li{
             font-size:0.6em;
         }
     } 
-
+    .fas{
+        font-size: 15px;
+    }
 }
