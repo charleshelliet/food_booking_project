@@ -2,6 +2,9 @@
     background-color: $color-primary;
     display: flex;
     justify-content: center;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
     .nav{
         width: 100%;
     }

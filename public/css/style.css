@@ -237,7 +237,7 @@ h4 {
 }
 
 /* Grand écran */
-@media all and (min-device-width: 2560px) {
+@media all and (min-width: 2560px) {
   h4 {
     font-size: 3em;
   }
@@ -262,7 +262,7 @@ h4 {
 }
 /* Petit écran */
 /* Tablette */
-@media all and (max-device-width: 768px) {
+@media all and (max-width: 768px) {
   h4 {
     font-size: 1.5em;
   }
@@ -295,11 +295,31 @@ h4 {
     font-size: 30px;
   }
 
+  #menu2 .menu__byline-big {
+    font-size: 1em;
+  }
+  #menu2 h3 {
+    font-size: 0.7em;
+  }
+  #menu2 .sous_menu__plat ul li {
+    font-size: 0.49em;
+  }
+
+  #menu4 .menu__byline-big {
+    font-size: 1.4em;
+  }
+  #menu4 h3 {
+    font-size: 0.8em;
+  }
+  #menu4 .sous_menu__plat ul li {
+    font-size: 0.45em;
+  }
+
   .sous_menu .menu__byline-big {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   .sous_menu h3, .sous_menu h2 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .sous_menu .sous_menu__plat ul li {
     font-size: 0.8em;
@@ -319,11 +339,31 @@ h4 {
     font-size: 20px;
   }
 
+  #menu2 .menu__byline-big {
+    font-size: 1em;
+  }
+  #menu2 h3 {
+    font-size: 0.5em;
+  }
+  #menu2 .sous_menu__plat ul li {
+    font-size: 0.35em;
+  }
+
+  #menu4 .menu__byline-big {
+    font-size: 1.5em;
+  }
+  #menu4 h3 {
+    font-size: 0.8em;
+  }
+  #menu4 .sous_menu__plat ul li {
+    font-size: 0.37em;
+  }
+
   .sous_menu .menu__byline-big {
     font-size: 1.5em;
   }
   .sous_menu h3, .sous_menu h2 {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .sous_menu .sous_menu__plat ul li {
     font-size: 0.6em;
@@ -337,6 +377,9 @@ h4 {
   background-color: #579c87;
   display: flex;
   justify-content: center;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
 }
 .footer .nav {
   width: 100%;

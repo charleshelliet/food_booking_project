@@ -158,7 +158,7 @@ border-bottom:5px solid grey;
 
 /* Grand écran */
 
-@media all and (min-device-width: 2560px) {
+@media all and (min-width: 2560px) {
     h4{
         font-size: 3em;
     }
@@ -183,13 +183,13 @@ border-bottom:5px solid grey;
 
 /* Petit écran */
 
-@media all and (max-device-width: 1024px) {
+@media all and (max-width: 1024px) {
 
 }
 
 /* Tablette */
 
-@media all and (max-device-width: 768px){
+@media all and (max-width: 768px){
     h4{
         font-size: 1.5em;
     }
@@ -222,12 +222,34 @@ border-bottom:5px solid grey;
     #fas-big {
         font-size: 30px;
     }
+    #menu2{
+        .menu__byline-big{
+            font-size: 1em;
+        }
+        h3{
+            font-size:0.7em;
+        }
+        .sous_menu__plat ul li{
+            font-size:0.49em;
+        }
+    } 
+    #menu4{
+        .menu__byline-big{
+            font-size: 1.4em;
+        }
+        h3{
+            font-size:0.8em;
+        }
+        .sous_menu__plat ul li{
+            font-size:0.45em;
+        }
+    } 
     .sous_menu{
         .menu__byline-big{
-            font-size: 1.8em;
+            font-size: 1.5em;
         }
         h3, h2{
-            font-size:1.2em;
+            font-size:1em;
         }
         .sous_menu__plat ul li{
             font-size:0.8em;
@@ -238,6 +260,7 @@ border-bottom:5px solid grey;
     }
 }
 
+
 /* Petit Mobile */
 
 @media all and (max-device-width: 375px){
@@ -247,15 +270,37 @@ border-bottom:5px solid grey;
     #fas-big {
         font-size: 20px;
     }
+    #menu2{
+        .menu__byline-big{
+            font-size: 1em;
+        }
+        h3{
+            font-size:0.50em;
+        }
+        .sous_menu__plat ul li{
+            font-size:0.35em;
+        }
+    } 
+    #menu4{
+        .menu__byline-big{
+            font-size: 1.5em;
+        }
+        h3{
+            font-size:0.8em;
+        }
+        .sous_menu__plat ul li{
+            font-size:0.37em;
+        }
+    } 
     .sous_menu{
         .menu__byline-big{
             font-size: 1.5em;
         }
         h3, h2{
-            font-size:1em;
+            font-size:0.9em;
         }
         .sous_menu__plat ul li{
-            font-size:0.6em;
+            font-size:0.60em;
         }
     } 
     .fas{
