@@ -4,7 +4,7 @@ OpenClassrooms Web Developer Courses - Training Project n°3
 
 ## General info
 
-Github web hosted online booking restaurants. Specially designed for training purposes. Inspired by OpenClassrooms coding courses.
+Github web hosted online restaurants menus. Specially designed for training purposes. Inspired by OpenClassrooms coding courses.
 
 ## Technologies
 
@@ -12,7 +12,7 @@ Project is created with:
 
 HTML5
 
-CSS3
+CSS3 (SASS)
 
 ## Setup
 
