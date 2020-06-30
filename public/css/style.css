@@ -84,6 +84,7 @@ body {
   border-radius: 10px;
   margin-bottom: 5%;
   display: flex;
+  /* Animation 3 petits points */
 }
 .soon p {
   font-weight: bold;
@@ -120,6 +121,7 @@ body {
     transform: translateY(-15px);
   }
 }
+/* Mixins spécificités menus */
 #menu1 {
   display: flex;
   align-items: center;
@@ -184,6 +186,24 @@ body {
   color: #72bf56;
 }
 
+.menu2__byline, #menu__byline-big2 {
+  background: linear-gradient(to right, #c77412 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu3__byline, #menu__byline-big3 {
+  background: linear-gradient(to right, #060699 0%, #0887fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu4__byline, #menu__byline-big4 {
+  background: linear-gradient(to right, #72bf56 0%, #dbdb25 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h4 {
   font-size: 2em;
   margin: 1em;
@@ -234,7 +254,6 @@ h4 {
 
 .sous_menu__title {
   width: 50%;
-  height: 1rem;
   margin: auto;
   text-align: center;
   position: relative;
@@ -246,7 +265,7 @@ h4 {
   left: calc(-30% - 5px);
   top: calc(50% - 3px);
   width: 40%;
-  border-bottom: 5px solid grey;
+  border-bottom: 4px solid grey;
 }
 
 .sous_menu__title:after {
@@ -255,7 +274,7 @@ h4 {
   right: calc(-30% - 5px);
   top: calc(50% - 3px);
   width: 40%;
-  border-bottom: 5px solid grey;
+  border-bottom: 4px solid grey;
 }
 
 .fas {
@@ -267,24 +286,25 @@ h4 {
   font-size: 60px;
 }
 
-.sous_menu .sous_menu__title {
+/* Animation titre menu */
+.sous_menu .sous_menu__title span {
   display: inline-block;
   padding: 15px 20px;
   position: relative;
 }
-.sous_menu .sous_menu__title:after {
+.sous_menu .sous_menu__title span:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 4px;
   left: 50%;
   position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  background: grey;
+  transition: width 0.8s ease 0s, left 0.8s ease 0s;
   width: 0;
 }
-.sous_menu .sous_menu__title:hover:after {
+.sous_menu .sous_menu__title span:hover:after {
   width: 100%;
   left: 0;
 }

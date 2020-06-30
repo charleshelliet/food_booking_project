@@ -1,0 +1,19 @@
+@mixin menu-style ($font, $color, $font-color) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $font;
+    background-color: $color;
+    color: $font-color;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(204,196,204,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(204,196,204,1);
+    box-shadow: 0px 0px 10px 1px rgba(204,196,204,1);
+    a{
+        color: $font-color;
+    }
+}
+
+@mixin color-bar ($border-color){
+    border-bottom:5px ridge $border-color;
+}

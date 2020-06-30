@@ -57,6 +57,7 @@
         p{
             font-weight: bold;
         }
+        /* Animation 3 petits points */
         #wave{
             position:relative;
 	        text-align:center;
@@ -92,6 +93,8 @@
 	}
 }
 
+/* Mixins spécificités menus */
+
 #menu1{
     @include menu-style ($font-note, $color-menu1, $color-note)
 }
@@ -104,6 +107,26 @@
 #menu4{
     @include menu-style ($font-palette, $color-menu4, $color-palette)
 }
+
+
+.menu2__byline, #menu__byline-big2{
+    background: linear-gradient(to right, $color-chic 0%, #330867 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.menu3__byline, #menu__byline-big3{
+    background: linear-gradient(to right, rgb(6, 6, 153) 0%, $color-delice 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.menu4__byline, #menu__byline-big4{
+    background: linear-gradient(to right, $color-palette 0%, rgb(219, 219, 37) 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 
 h4{
     font-size: 2em;
@@ -156,7 +179,6 @@ h4{
 
 .sous_menu__title{
 width: 50%;
-height:1rem;
 margin:auto;
 text-align:center;
 position:relative; }
@@ -167,7 +189,7 @@ position:absolute;
 left:calc(-30% - 5px);
 top:calc(50% - 3px);
 width:40%;
-border-bottom:5px solid grey;
+border-bottom:4px solid grey;
 }   
 
 .sous_menu__title:after{
@@ -176,7 +198,7 @@ position:absolute;
 right:calc(-30% - 5px);
 top:calc(50% - 3px);
 width:40%;
-border-bottom:5px solid grey;
+border-bottom:4px solid grey;
 }
 
 .fas {
@@ -188,25 +210,27 @@ border-bottom:5px solid grey;
     font-size: 60px;
 }
 
+/* Animation titre menu */
+
 .sous_menu{
-    .sous_menu__title {    
+    .sous_menu__title span {    
         display: inline-block;
         padding: 15px 20px;
         position: relative;
     }
-    .sous_menu__title:after {    
+    .sous_menu__title span:after {    
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
         content: "";
         display: block;
-        height: 2px;
+        height: 4px;
         left: 50%;
         position: absolute;
-        background: #fff;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        background: grey;
+        transition: width 0.8s ease 0s, left 0.8s ease 0s;
         width: 0;
     }
-    .sous_menu__title:hover:after { 
+    .sous_menu__title span:hover:after { 
         width: 100%;    
         left: 0; 
     }
