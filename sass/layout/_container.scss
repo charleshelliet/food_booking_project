@@ -438,3 +438,28 @@ border-bottom:4px solid grey;
         font-size: 15px;
     }
 }
+
+@media all and (max-width: 320px){
+    #menu2{
+        .menu__byline-big{
+            font-size: 0.9em;
+        }
+        h3{
+            font-size:0.4em;
+        }
+        .sous_menu__plat ul li{
+            font-size:0.2em;
+        }
+    } 
+    #menu4{
+        .menu__byline-big{
+            font-size: 1.4em;
+        }
+        h3{
+            font-size:0.6em;
+        }
+        .sous_menu__plat ul li{
+            font-size:0.25em;
+        }
+    } 
+}
